@@ -8,9 +8,9 @@ from django.conf import settings
 from django.conf import settings
 from django.conf.urls.static import static
 
-admin.site.site_header = "Staff Adviser Superadmin"
-admin.site.site_title = "Staff Adviser Superadmin Portal"
-admin.site.index_title = "Welcome to Staff Sdviser Superadmin Portal"
+admin.site.site_header = "Dvooskid Codes Superadmin"
+admin.site.site_title = "Dvooskid Codes Superadmin Portal"
+admin.site.index_title = "Welcome to Dvooskid Codes Superadmin Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
