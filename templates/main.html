@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dvooskid Codes | Backend</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Your custom styles -->
+    <style>
+        /* Add your custom styles here */
+        @keyframes moveObject {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(200px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .animated-object {
+            animation: moveObject 4s infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans relative">
+
+    <!-- Animated Object -->
+    <div class="absolute top-20 left-1/2 transform -translate-x-1/2">
+        <svg class="h-12 w-12 text-blue-500 animated-object" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-xl">Dvooskid Codes, Inc.</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
+                <li><a href="https://edetdavid.vercel.app" class="text-white hover:text-gray-200">About</a></li>
+                <li><a href="https://edetdavid.vercel.app" class="text-white hover:text-gray-200">Services</a></li>
+                <li><a href="https://edetdavid.vercel.app/#contact" class="text-white hover:text-gray-200">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-900 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Dvooskid Codes, Inc.</h1>
+            <p class="text-lg mb-8">Am a React and Python Developer with more than 5years of experiences. I also build
+                highly scalable and proficient mobile applications also</p>
+            <a href="#"
+                class="bg-white text-blue-900 py-2 px-6 rounded-full uppercase text-lg font-semibold hover:bg-blue-100 hover:text-blue-800">Learn
+                More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Skills</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="mb-4">
+                        <svg class="h-12 w-12 text-blue-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Web Developer</h3>
+                    <p>A Web Developer is a programmer who specializes in the development of applications relating to
+                        the World Wide Web or distributed network applications, which typically run protocols like HTTP
+                        from a web server to a client browser using associated programming languages like React
+                        JavaScript, Python-Django, PostgreSQL.</p>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="mb-4">
+                        <svg class="h-12 w-12 text-blue-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Mobile App Developer</h3>
+                    <p>A Mobile App Developer is a software engineer who specializes in creating applications for mobile
+                        devices. They develop apps for various mobile operating systems, including Android and iOS,
+                        using programming languages such as React Native, Firebase, FLutter.</p>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="mb-4">
+                        <svg class="h-12 w-12 text-blue-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Graphic Designer</h3>
+                    <p>A Graphic Designer is a professional within the graphic design and graphic arts industry who
+                        assembles together images, typography, or motion graphics to create a piece of design. They
+                        create visual concepts, using computer software or by hand, to communicate ideas that inspire,
+                        inform, and captivate consumers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Dvooskid Codes, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
