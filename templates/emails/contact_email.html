@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Contact Submission</title>
+        <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #3b82f6;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .body {
+            padding: 20px;
+        }
+        .body p {
+            color: #4b5563;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .detail {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .detail span {
+            font-size: 16px;
+        }
+        .detail .label {
+            font-weight: bold;
+            color: #111827;
+            width: 30%;
+        }
+        .detail .value {
+            color: #6b7280;
+            width: 70%;
+        }
+        .message-box {
+            background-color: #f9fafb;
+            padding: 10px;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            color: #374151;
+            line-height: 1.5;
+        }
+        .footer {
+            background-color: #f9fafb;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <h1>New Contact Submission</h1>
+            </div>
+            <!-- Body -->
+            <div class="body">
+                <p>You have received a new contact form submission. Below are the details:</p>
+                <!-- Name -->
+                <div class="detail">
+                    <span class="label">Name:</span>
+                    <span class="value">{{ name }}</span>
+                </div>
+                <!-- Email -->
+                <div class="detail">
+                    <span class="label">Email:</span>
+                    <span class="value">{{ email }}</span>
+                </div>
+                <!-- Phone -->
+                <div class="detail">
+                    <span class="label">Phone:</span>
+                    <span class="value">{{ phone }}</span>
+                </div>
+                <!-- Message -->
+                <div>
+                    <span class="label">Message:</span>
+                    <div class="message-box">{{ message }}</div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="footer">
+                <p>This is an automated email. Please do not reply.</p>
+            </div>
+        </div>
+    </body>
+</html>
